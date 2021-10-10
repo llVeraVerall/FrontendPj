@@ -1,0 +1,25 @@
+.conteiner{
+    padding-top: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    border: 1px solid red;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.first{
+
+}
+.a{
+    width: 100px;
+    height: 100px;
+    background: red;
+}

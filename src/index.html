@@ -11,8 +11,9 @@
     <div class="conteiner">
         <h1>Webpack</h1>
     </div>
+    <div class="cards-list">
     <div class="first">
-        <h1 class="h1">Найдём номера под ваши пожелания</h1>
+       <h1 class="h1">Найдём номера под ваши пожелания</h1>
         <label for="arrival">прибытие</label>
         <input type="date" id="arrival"
                placeholder="ДД.ММ.ГГГГ"
@@ -23,7 +24,7 @@
                placeholder="ДД.ММ.ГГГГ"
                min="2021-10-10" max="2021-12-31">
 
-        <select size="1">
+        <select size="1" class="select">
             <option>1 гость</option>
             <option>2 гостя</option>
             <option>3 гостя</option>
@@ -35,6 +36,23 @@
         </select>
 
         <button class="button">подобрать номер</button>
+    </div>
+        <div class="two">
+            <h1 class="h1">Регистрация аккаунта</h1>
+            <input value="Имя" class="input__two">
+            <input value="Фамилия" class="input__two">
+            <p><input type="radio" class="gender" value="Мужчина" checked>Мужчина</p>
+            <p><input type="radio" class="gender" value="Женщина">Женщина</p>
+
+            <label for="leaving">дата рождения</label>
+            <input type="date"
+                   placeholder="ДД.ММ.ГГГГ"
+                   min="1970-10-10" max="2021-12-31">
+
+            <label>данные для входа в сервис</label>
+            <input value="Email" class="input__two">
+            <input value="Пароль" class="input__two">
+        </div>
     </div>
 </body>
 

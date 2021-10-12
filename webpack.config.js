@@ -26,7 +26,12 @@ module.exports = {
                 filename: './cards.html',
                 template: 'cards.html'
             }
-        )
+        ),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jquery': 'jquery'
+        })
     ],
 
     module: {

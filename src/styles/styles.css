@@ -21,9 +21,16 @@ input{
    /* display: flex;
     justify-content: center;
     flex-wrap: wrap;*/
-
 }
 
+p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
 
 .cards-list{
     display: flex;
@@ -43,8 +50,8 @@ input{
     flex-direction: column;
     justify-content: space-between;*/
     padding: 1.8rem;
-
 }
+
 .two{
     width: 23rem;
     height: 40rem;
@@ -55,12 +62,14 @@ input{
     border-radius: 4px;
     padding: 1.8rem;
 }
+
 .h1{
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
 }
+
 option{
     width: 20rem;
     height: 2.5rem;
@@ -74,15 +83,85 @@ option{
     color: #FFFFFF;
     font-size: 12px;
     line-height: 15px;
-
+    margin-top: 1.25rem;
 }
+
+.button:hover{
+    cursor: pointer;
+}
+
 .gender{
     display: flex;
     justify-content: space-around;
     width: 1.25rem;
     height: 1.25rem;
+    cursor: pointer;
 }
+
 .input__two{
     width: 20rem;
     height: 2.5rem;
+    margin-bottom: .7rem;
+}
+
+.checkbox-ios .checkbox-ios-switch {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 2.5rem;
+    height: 1.25rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    vertical-align: top;
+    background: rgba(31, 32, 65, 0.25);
+    transition: .2s;
+}
+
+.checkbox-ios .checkbox-ios-switch:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    transition: .15s;
+}
+
+.checkbox-ios input[type=checkbox] {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox-ios input[type=checkbox]:not(:disabled):active + .checkbox-ios-switch:before {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+}
+.checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
+    transform:translateX(28px);
+}
+/* Hover */
+.checkbox-ios input[type="checkbox"]:not(:disabled) + .checkbox-ios-switch {
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, .3);
+}
+
+.three{
+    width: 24rem;
+    height: 32rem;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 1.8rem;
 }
